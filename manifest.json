@@ -1,0 +1,18 @@
+{
+  "name": "Airbnb pricer",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Displays price per person per night automatically in the listings page",
+  "permissions": [
+    "tabs", "https://www.airbnb.com/*"
+  ],
+  "content_scripts": [
+    {
+    "matches": ["https://www.airbnb.com/s/*"],
+    "js": [
+      "scripts/jquery.js",
+      "scripts/background.js"
+    ]
+  }
+  ]
+}
